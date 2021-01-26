@@ -11,6 +11,8 @@ class ViewController: UITableViewController {
 
     var pictures = [String]()
 
+    // MARK: Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,8 +28,10 @@ class ViewController: UITableViewController {
         }
     }
 
+    // MARK: Internal
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pictures.count
+        pictures.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,4 +48,3 @@ class ViewController: UITableViewController {
     }
 
 }
-
