@@ -42,7 +42,6 @@ class WhackSlot: SKNode {
         charNode.yScale = 1
 
         charNode.run(SKAction.moveBy(x: 0, y: 80, duration: 0.05))
-
         isVisible = true
         isHit = false
 
@@ -50,7 +49,7 @@ class WhackSlot: SKNode {
             charNode.texture = SKTexture(imageNamed: "penguinGood")
             charNode.name = "charFriend"
         } else {
-            charNode.texture = SKTexture(imageNamed: "penguinEvil")
+            charNode.texture = SKTexture(imageNamed: "donald")
             charNode.name = "charEnemy"
         }
 
@@ -61,6 +60,10 @@ class WhackSlot: SKNode {
 
     func hit() {
         isHit = true
+
+        if let smokeParticle = SKEmitterNode(fileNamed: "smokeParticle") {
+            addChild(smokeParticle)
+        }
 
         let delay = SKAction.wait(forDuration: 0.25)
         let hide = SKAction.moveBy(x: 0, y: -80, duration: 0.5)
@@ -75,3 +78,4 @@ class WhackSlot: SKNode {
         isVisible = false
     }
 }
+

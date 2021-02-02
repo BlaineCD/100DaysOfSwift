@@ -7,35 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF2258C525C990100053EB3E /* smokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF2258C425C990100053EB3E /* smokeParticle.sks */; };
-		DF2258DC25C9CC3D0053EB3E /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF72151B25C866F8001E03F9 /* whack.caf */; };
-		DF2258DE25C9CC400053EB3E /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF72151C25C86700001E03F9 /* whackBad.caf */; };
-		DF72150425C86604001E03F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150325C86604001E03F9 /* AppDelegate.swift */; };
-		DF72150625C86604001E03F9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF72150525C86604001E03F9 /* GameScene.sks */; };
-		DF72150A25C86604001E03F9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150925C86604001E03F9 /* GameScene.swift */; };
-		DF72150C25C86604001E03F9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150B25C86604001E03F9 /* GameViewController.swift */; };
-		DF72150F25C86604001E03F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF72150D25C86604001E03F9 /* Main.storyboard */; };
-		DF72151125C86605001E03F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF72151025C86605001E03F9 /* Assets.xcassets */; };
-		DF72151F25C86DCE001E03F9 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72151E25C86DCE001E03F9 /* WhackSlot.swift */; };
+		DFA7995425AA117900ACF9A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7995325AA117900ACF9A7 /* AppDelegate.swift */; };
+		DFA7995625AA117900ACF9A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7995525AA117900ACF9A7 /* SceneDelegate.swift */; };
+		DFA7995825AA117900ACF9A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7995725AA117900ACF9A7 /* ViewController.swift */; };
+		DFA7995B25AA117900ACF9A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA7995925AA117900ACF9A7 /* Main.storyboard */; };
+		DFA7995D25AA117A00ACF9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA7995C25AA117A00ACF9A7 /* Assets.xcassets */; };
+		DFA7996025AA117A00ACF9A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA7995E25AA117A00ACF9A7 /* LaunchScreen.storyboard */; };
+		DFA7996925AA181600ACF9A7 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7996825AA181600ACF9A7 /* Petition.swift */; };
+		DFA7996C25AA18AB00ACF9A7 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7996B25AA18AB00ACF9A7 /* Petitions.swift */; };
+		DFA7996F25AA26D900ACF9A7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA7996E25AA26D900ACF9A7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF2258C425C990100053EB3E /* smokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smokeParticle.sks; sourceTree = "<group>"; };
-		DF72150025C86604001E03F9 /* Project14_WhackAPenguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project14_WhackAPenguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF72150325C86604001E03F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF72150525C86604001E03F9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DF72150925C86604001E03F9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		DF72150B25C86604001E03F9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		DF72150E25C86604001E03F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DF72151025C86605001E03F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF72151225C86605001E03F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF72151B25C866F8001E03F9 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
-		DF72151C25C86700001E03F9 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
-		DF72151E25C86DCE001E03F9 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		DFA7995025AA117900ACF9A7 /* Project7_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project7_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA7995325AA117900ACF9A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFA7995525AA117900ACF9A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DFA7995725AA117900ACF9A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFA7995A25AA117900ACF9A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFA7995C25AA117A00ACF9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFA7995F25AA117A00ACF9A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFA7996125AA117A00ACF9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA7996825AA181600ACF9A7 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		DFA7996B25AA18AB00ACF9A7 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
+		DFA7996E25AA26D900ACF9A7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DF7214FD25C86604001E03F9 /* Frameworks */ = {
+		DFA7994D25AA117900ACF9A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,75 +43,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF7214F725C86604001E03F9 = {
+		DFA7994725AA117900ACF9A7 = {
 			isa = PBXGroup;
 			children = (
-				DF72150225C86604001E03F9 /* Project14_WhackAPenguin */,
-				DF72150125C86604001E03F9 /* Products */,
+				DFA7995225AA117900ACF9A7 /* Project7_v2 */,
+				DFA7995125AA117900ACF9A7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DF72150125C86604001E03F9 /* Products */ = {
+		DFA7995125AA117900ACF9A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF72150025C86604001E03F9 /* Project14_WhackAPenguin.app */,
+				DFA7995025AA117900ACF9A7 /* Project7_v2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF72150225C86604001E03F9 /* Project14_WhackAPenguin */ = {
+		DFA7995225AA117900ACF9A7 /* Project7_v2 */ = {
 			isa = PBXGroup;
 			children = (
-				DF72150325C86604001E03F9 /* AppDelegate.swift */,
-				DF72150525C86604001E03F9 /* GameScene.sks */,
-				DF72150925C86604001E03F9 /* GameScene.swift */,
-				DF2258C425C990100053EB3E /* smokeParticle.sks */,
-				DF72151E25C86DCE001E03F9 /* WhackSlot.swift */,
-				DF72150B25C86604001E03F9 /* GameViewController.swift */,
-				DF72150D25C86604001E03F9 /* Main.storyboard */,
-				DF72151025C86605001E03F9 /* Assets.xcassets */,
-				DF72151225C86605001E03F9 /* Info.plist */,
-				DF72151B25C866F8001E03F9 /* whack.caf */,
-				DF72151C25C86700001E03F9 /* whackBad.caf */,
+				DFA7995325AA117900ACF9A7 /* AppDelegate.swift */,
+				DFA7995525AA117900ACF9A7 /* SceneDelegate.swift */,
+				DFA7995725AA117900ACF9A7 /* ViewController.swift */,
+				DFA7996E25AA26D900ACF9A7 /* DetailViewController.swift */,
+				DFA7996825AA181600ACF9A7 /* Petition.swift */,
+				DFA7996B25AA18AB00ACF9A7 /* Petitions.swift */,
+				DFA7995925AA117900ACF9A7 /* Main.storyboard */,
+				DFA7995C25AA117A00ACF9A7 /* Assets.xcassets */,
+				DFA7995E25AA117A00ACF9A7 /* LaunchScreen.storyboard */,
+				DFA7996125AA117A00ACF9A7 /* Info.plist */,
 			);
-			path = Project14_WhackAPenguin;
+			path = Project7_v2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF7214FF25C86604001E03F9 /* Project14_WhackAPenguin */ = {
+		DFA7994F25AA117900ACF9A7 /* Project7_v2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF72151525C86605001E03F9 /* Build configuration list for PBXNativeTarget "Project14_WhackAPenguin" */;
+			buildConfigurationList = DFA7996425AA117A00ACF9A7 /* Build configuration list for PBXNativeTarget "Project7_v2" */;
 			buildPhases = (
-				DF7214FC25C86604001E03F9 /* Sources */,
-				DF7214FD25C86604001E03F9 /* Frameworks */,
-				DF7214FE25C86604001E03F9 /* Resources */,
+				DFA7994C25AA117900ACF9A7 /* Sources */,
+				DFA7994D25AA117900ACF9A7 /* Frameworks */,
+				DFA7994E25AA117900ACF9A7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Project14_WhackAPenguin;
-			productName = Project14_WhackAPenguin;
-			productReference = DF72150025C86604001E03F9 /* Project14_WhackAPenguin.app */;
+			name = Project7_v2;
+			productName = Project7_v2;
+			productReference = DFA7995025AA117900ACF9A7 /* Project7_v2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DF7214F825C86604001E03F9 /* Project object */ = {
+		DFA7994825AA117900ACF9A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					DF7214FF25C86604001E03F9 = {
-						CreatedOnToolsVersion = 12.4;
+					DFA7994F25AA117900ACF9A7 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = DF7214FB25C86604001E03F9 /* Build configuration list for PBXProject "Project14_WhackAPenguin" */;
+			buildConfigurationList = DFA7994B25AA117900ACF9A7 /* Build configuration list for PBXProject "Project7_v2" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,59 +118,66 @@
 				en,
 				Base,
 			);
-			mainGroup = DF7214F725C86604001E03F9;
-			productRefGroup = DF72150125C86604001E03F9 /* Products */;
+			mainGroup = DFA7994725AA117900ACF9A7;
+			productRefGroup = DFA7995125AA117900ACF9A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF7214FF25C86604001E03F9 /* Project14_WhackAPenguin */,
+				DFA7994F25AA117900ACF9A7 /* Project7_v2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DF7214FE25C86604001E03F9 /* Resources */ = {
+		DFA7994E25AA117900ACF9A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2258DC25C9CC3D0053EB3E /* whack.caf in Resources */,
-				DF2258DE25C9CC400053EB3E /* whackBad.caf in Resources */,
-				DF72150F25C86604001E03F9 /* Main.storyboard in Resources */,
-				DF72150625C86604001E03F9 /* GameScene.sks in Resources */,
-				DF72151125C86605001E03F9 /* Assets.xcassets in Resources */,
-				DF2258C525C990100053EB3E /* smokeParticle.sks in Resources */,
+				DFA7996025AA117A00ACF9A7 /* LaunchScreen.storyboard in Resources */,
+				DFA7995D25AA117A00ACF9A7 /* Assets.xcassets in Resources */,
+				DFA7995B25AA117900ACF9A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DF7214FC25C86604001E03F9 /* Sources */ = {
+		DFA7994C25AA117900ACF9A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF72150A25C86604001E03F9 /* GameScene.swift in Sources */,
-				DF72150C25C86604001E03F9 /* GameViewController.swift in Sources */,
-				DF72151F25C86DCE001E03F9 /* WhackSlot.swift in Sources */,
-				DF72150425C86604001E03F9 /* AppDelegate.swift in Sources */,
+				DFA7995825AA117900ACF9A7 /* ViewController.swift in Sources */,
+				DFA7996925AA181600ACF9A7 /* Petition.swift in Sources */,
+				DFA7995425AA117900ACF9A7 /* AppDelegate.swift in Sources */,
+				DFA7996F25AA26D900ACF9A7 /* DetailViewController.swift in Sources */,
+				DFA7995625AA117900ACF9A7 /* SceneDelegate.swift in Sources */,
+				DFA7996C25AA18AB00ACF9A7 /* Petitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF72150D25C86604001E03F9 /* Main.storyboard */ = {
+		DFA7995925AA117900ACF9A7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF72150E25C86604001E03F9 /* Base */,
+				DFA7995A25AA117900ACF9A7 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFA7995E25AA117A00ACF9A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFA7995F25AA117A00ACF9A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DF72151325C86605001E03F9 /* Debug */ = {
+		DFA7996225AA117A00ACF9A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -234,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		DF72151425C86605001E03F9 /* Release */ = {
+		DFA7996325AA117A00ACF9A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,66 +293,64 @@
 			};
 			name = Release;
 		};
-		DF72151625C86605001E03F9 /* Debug */ = {
+		DFA7996525AA117A00ACF9A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQGUF324D5;
-				INFOPLIST_FILE = Project14_WhackAPenguin/Info.plist;
+				INFOPLIST_FILE = Project7_v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project14-WhackAPenguin";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project7-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DF72151725C86605001E03F9 /* Release */ = {
+		DFA7996625AA117A00ACF9A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQGUF324D5;
-				INFOPLIST_FILE = Project14_WhackAPenguin/Info.plist;
+				INFOPLIST_FILE = Project7_v2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project14-WhackAPenguin";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project7-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF7214FB25C86604001E03F9 /* Build configuration list for PBXProject "Project14_WhackAPenguin" */ = {
+		DFA7994B25AA117900ACF9A7 /* Build configuration list for PBXProject "Project7_v2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF72151325C86605001E03F9 /* Debug */,
-				DF72151425C86605001E03F9 /* Release */,
+				DFA7996225AA117A00ACF9A7 /* Debug */,
+				DFA7996325AA117A00ACF9A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF72151525C86605001E03F9 /* Build configuration list for PBXNativeTarget "Project14_WhackAPenguin" */ = {
+		DFA7996425AA117A00ACF9A7 /* Build configuration list for PBXNativeTarget "Project7_v2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF72151625C86605001E03F9 /* Debug */,
-				DF72151725C86605001E03F9 /* Release */,
+				DFA7996525AA117A00ACF9A7 /* Debug */,
+				DFA7996625AA117A00ACF9A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DF7214F825C86604001E03F9 /* Project object */;
+	rootObject = DFA7994825AA117900ACF9A7 /* Project object */;
 }
