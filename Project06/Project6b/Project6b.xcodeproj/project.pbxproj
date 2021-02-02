@@ -7,35 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF2258C525C990100053EB3E /* smokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF2258C425C990100053EB3E /* smokeParticle.sks */; };
-		DF2258DC25C9CC3D0053EB3E /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF72151B25C866F8001E03F9 /* whack.caf */; };
-		DF2258DE25C9CC400053EB3E /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF72151C25C86700001E03F9 /* whackBad.caf */; };
-		DF72150425C86604001E03F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150325C86604001E03F9 /* AppDelegate.swift */; };
-		DF72150625C86604001E03F9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF72150525C86604001E03F9 /* GameScene.sks */; };
-		DF72150A25C86604001E03F9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150925C86604001E03F9 /* GameScene.swift */; };
-		DF72150C25C86604001E03F9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150B25C86604001E03F9 /* GameViewController.swift */; };
-		DF72150F25C86604001E03F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF72150D25C86604001E03F9 /* Main.storyboard */; };
-		DF72151125C86605001E03F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF72151025C86605001E03F9 /* Assets.xcassets */; };
-		DF72151F25C86DCE001E03F9 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72151E25C86DCE001E03F9 /* WhackSlot.swift */; };
+		DF13F79725A2764900753900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13F79625A2764900753900 /* AppDelegate.swift */; };
+		DF13F79925A2764900753900 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13F79825A2764900753900 /* SceneDelegate.swift */; };
+		DF13F79B25A2764900753900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF13F79A25A2764900753900 /* ViewController.swift */; };
+		DF13F79E25A2764900753900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13F79C25A2764900753900 /* Main.storyboard */; };
+		DF13F7A025A2764A00753900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF13F79F25A2764A00753900 /* Assets.xcassets */; };
+		DF13F7A325A2764A00753900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF13F7A125A2764A00753900 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF2258C425C990100053EB3E /* smokeParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smokeParticle.sks; sourceTree = "<group>"; };
-		DF72150025C86604001E03F9 /* Project14_WhackAPenguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project14_WhackAPenguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF72150325C86604001E03F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF72150525C86604001E03F9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DF72150925C86604001E03F9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		DF72150B25C86604001E03F9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		DF72150E25C86604001E03F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DF72151025C86605001E03F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF72151225C86605001E03F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF72151B25C866F8001E03F9 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
-		DF72151C25C86700001E03F9 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
-		DF72151E25C86DCE001E03F9 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		DF13F79325A2764900753900 /* Project6b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project6b.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13F79625A2764900753900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF13F79825A2764900753900 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF13F79A25A2764900753900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF13F79D25A2764900753900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF13F79F25A2764A00753900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF13F7A225A2764A00753900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF13F7A425A2764A00753900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DF7214FD25C86604001E03F9 /* Frameworks */ = {
+		DF13F79025A2764900753900 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,75 +37,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF7214F725C86604001E03F9 = {
+		DF13F78A25A2764900753900 = {
 			isa = PBXGroup;
 			children = (
-				DF72150225C86604001E03F9 /* Project14_WhackAPenguin */,
-				DF72150125C86604001E03F9 /* Products */,
+				DF13F79525A2764900753900 /* Project6b */,
+				DF13F79425A2764900753900 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DF72150125C86604001E03F9 /* Products */ = {
+		DF13F79425A2764900753900 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF72150025C86604001E03F9 /* Project14_WhackAPenguin.app */,
+				DF13F79325A2764900753900 /* Project6b.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF72150225C86604001E03F9 /* Project14_WhackAPenguin */ = {
+		DF13F79525A2764900753900 /* Project6b */ = {
 			isa = PBXGroup;
 			children = (
-				DF72150325C86604001E03F9 /* AppDelegate.swift */,
-				DF72150525C86604001E03F9 /* GameScene.sks */,
-				DF72150925C86604001E03F9 /* GameScene.swift */,
-				DF2258C425C990100053EB3E /* smokeParticle.sks */,
-				DF72151E25C86DCE001E03F9 /* WhackSlot.swift */,
-				DF72150B25C86604001E03F9 /* GameViewController.swift */,
-				DF72150D25C86604001E03F9 /* Main.storyboard */,
-				DF72151025C86605001E03F9 /* Assets.xcassets */,
-				DF72151225C86605001E03F9 /* Info.plist */,
-				DF72151B25C866F8001E03F9 /* whack.caf */,
-				DF72151C25C86700001E03F9 /* whackBad.caf */,
+				DF13F79625A2764900753900 /* AppDelegate.swift */,
+				DF13F79825A2764900753900 /* SceneDelegate.swift */,
+				DF13F79A25A2764900753900 /* ViewController.swift */,
+				DF13F79C25A2764900753900 /* Main.storyboard */,
+				DF13F79F25A2764A00753900 /* Assets.xcassets */,
+				DF13F7A125A2764A00753900 /* LaunchScreen.storyboard */,
+				DF13F7A425A2764A00753900 /* Info.plist */,
 			);
-			path = Project14_WhackAPenguin;
+			path = Project6b;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF7214FF25C86604001E03F9 /* Project14_WhackAPenguin */ = {
+		DF13F79225A2764900753900 /* Project6b */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF72151525C86605001E03F9 /* Build configuration list for PBXNativeTarget "Project14_WhackAPenguin" */;
+			buildConfigurationList = DF13F7A725A2764A00753900 /* Build configuration list for PBXNativeTarget "Project6b" */;
 			buildPhases = (
-				DF7214FC25C86604001E03F9 /* Sources */,
-				DF7214FD25C86604001E03F9 /* Frameworks */,
-				DF7214FE25C86604001E03F9 /* Resources */,
+				DF13F78F25A2764900753900 /* Sources */,
+				DF13F79025A2764900753900 /* Frameworks */,
+				DF13F79125A2764900753900 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Project14_WhackAPenguin;
-			productName = Project14_WhackAPenguin;
-			productReference = DF72150025C86604001E03F9 /* Project14_WhackAPenguin.app */;
+			name = Project6b;
+			productName = Project6b;
+			productReference = DF13F79325A2764900753900 /* Project6b.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DF7214F825C86604001E03F9 /* Project object */ = {
+		DF13F78B25A2764900753900 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					DF7214FF25C86604001E03F9 = {
-						CreatedOnToolsVersion = 12.4;
+					DF13F79225A2764900753900 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = DF7214FB25C86604001E03F9 /* Build configuration list for PBXProject "Project14_WhackAPenguin" */;
+			buildConfigurationList = DF13F78E25A2764900753900 /* Build configuration list for PBXProject "Project6b" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,59 +109,63 @@
 				en,
 				Base,
 			);
-			mainGroup = DF7214F725C86604001E03F9;
-			productRefGroup = DF72150125C86604001E03F9 /* Products */;
+			mainGroup = DF13F78A25A2764900753900;
+			productRefGroup = DF13F79425A2764900753900 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF7214FF25C86604001E03F9 /* Project14_WhackAPenguin */,
+				DF13F79225A2764900753900 /* Project6b */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DF7214FE25C86604001E03F9 /* Resources */ = {
+		DF13F79125A2764900753900 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2258DC25C9CC3D0053EB3E /* whack.caf in Resources */,
-				DF2258DE25C9CC400053EB3E /* whackBad.caf in Resources */,
-				DF72150F25C86604001E03F9 /* Main.storyboard in Resources */,
-				DF72150625C86604001E03F9 /* GameScene.sks in Resources */,
-				DF72151125C86605001E03F9 /* Assets.xcassets in Resources */,
-				DF2258C525C990100053EB3E /* smokeParticle.sks in Resources */,
+				DF13F7A325A2764A00753900 /* LaunchScreen.storyboard in Resources */,
+				DF13F7A025A2764A00753900 /* Assets.xcassets in Resources */,
+				DF13F79E25A2764900753900 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DF7214FC25C86604001E03F9 /* Sources */ = {
+		DF13F78F25A2764900753900 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF72150A25C86604001E03F9 /* GameScene.swift in Sources */,
-				DF72150C25C86604001E03F9 /* GameViewController.swift in Sources */,
-				DF72151F25C86DCE001E03F9 /* WhackSlot.swift in Sources */,
-				DF72150425C86604001E03F9 /* AppDelegate.swift in Sources */,
+				DF13F79B25A2764900753900 /* ViewController.swift in Sources */,
+				DF13F79725A2764900753900 /* AppDelegate.swift in Sources */,
+				DF13F79925A2764900753900 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF72150D25C86604001E03F9 /* Main.storyboard */ = {
+		DF13F79C25A2764900753900 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DF72150E25C86604001E03F9 /* Base */,
+				DF13F79D25A2764900753900 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF13F7A125A2764A00753900 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF13F7A225A2764A00753900 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DF72151325C86605001E03F9 /* Debug */ = {
+		DF13F7A525A2764A00753900 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -234,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		DF72151425C86605001E03F9 /* Release */ = {
+		DF13F7A625A2764A00753900 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,66 +281,64 @@
 			};
 			name = Release;
 		};
-		DF72151625C86605001E03F9 /* Debug */ = {
+		DF13F7A825A2764A00753900 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQGUF324D5;
-				INFOPLIST_FILE = Project14_WhackAPenguin/Info.plist;
+				INFOPLIST_FILE = Project6b/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project14-WhackAPenguin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Project6b;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DF72151725C86605001E03F9 /* Release */ = {
+		DF13F7A925A2764A00753900 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQGUF324D5;
-				INFOPLIST_FILE = Project14_WhackAPenguin/Info.plist;
+				INFOPLIST_FILE = Project6b/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project14-WhackAPenguin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Project6b;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF7214FB25C86604001E03F9 /* Build configuration list for PBXProject "Project14_WhackAPenguin" */ = {
+		DF13F78E25A2764900753900 /* Build configuration list for PBXProject "Project6b" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF72151325C86605001E03F9 /* Debug */,
-				DF72151425C86605001E03F9 /* Release */,
+				DF13F7A525A2764A00753900 /* Debug */,
+				DF13F7A625A2764A00753900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF72151525C86605001E03F9 /* Build configuration list for PBXNativeTarget "Project14_WhackAPenguin" */ = {
+		DF13F7A725A2764A00753900 /* Build configuration list for PBXNativeTarget "Project6b" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF72151625C86605001E03F9 /* Debug */,
-				DF72151725C86605001E03F9 /* Release */,
+				DF13F7A825A2764A00753900 /* Debug */,
+				DF13F7A925A2764A00753900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DF7214F825C86604001E03F9 /* Project object */;
+	rootObject = DF13F78B25A2764900753900 /* Project object */;
 }
