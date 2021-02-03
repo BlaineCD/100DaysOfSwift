@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DF2258C525C990100053EB3E /* smokeParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF2258C425C990100053EB3E /* smokeParticle.sks */; };
-		DF2258DC25C9CC3D0053EB3E /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF72151B25C866F8001E03F9 /* whack.caf */; };
-		DF2258DE25C9CC400053EB3E /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF72151C25C86700001E03F9 /* whackBad.caf */; };
 		DF72150425C86604001E03F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150325C86604001E03F9 /* AppDelegate.swift */; };
 		DF72150625C86604001E03F9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF72150525C86604001E03F9 /* GameScene.sks */; };
 		DF72150A25C86604001E03F9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72150925C86604001E03F9 /* GameScene.swift */; };
@@ -17,6 +15,10 @@
 		DF72150F25C86604001E03F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF72150D25C86604001E03F9 /* Main.storyboard */; };
 		DF72151125C86605001E03F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF72151025C86605001E03F9 /* Assets.xcassets */; };
 		DF72151F25C86DCE001E03F9 /* WhackSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72151E25C86DCE001E03F9 /* WhackSlot.swift */; };
+		DFF781EF25CB15E7003E5D34 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = DFF781EA25CB15D9003E5D34 /* whack.caf */; };
+		DFF781F125CB15EA003E5D34 /* whackBad.caf in Resources */ = {isa = PBXBuildFile; fileRef = DFF781EB25CB15D9003E5D34 /* whackBad.caf */; };
+		DFF781FA25CB18C5003E5D34 /* game.caf in Resources */ = {isa = PBXBuildFile; fileRef = DFF781F825CB1880003E5D34 /* game.caf */; };
+		DFF7820C25CB1FA5003E5D34 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = DFF7820B25CB1FA5003E5D34 /* snow.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +31,11 @@
 		DF72150E25C86604001E03F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF72151025C86605001E03F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF72151225C86605001E03F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF72151B25C866F8001E03F9 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
-		DF72151C25C86700001E03F9 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
 		DF72151E25C86DCE001E03F9 /* WhackSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackSlot.swift; sourceTree = "<group>"; };
+		DFF781EA25CB15D9003E5D34 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		DFF781EB25CB15D9003E5D34 /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
+		DFF781F825CB1880003E5D34 /* game.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = game.caf; sourceTree = "<group>"; };
+		DFF7820B25CB1FA5003E5D34 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +72,15 @@
 				DF72150525C86604001E03F9 /* GameScene.sks */,
 				DF72150925C86604001E03F9 /* GameScene.swift */,
 				DF2258C425C990100053EB3E /* smokeParticle.sks */,
+				DFF7820B25CB1FA5003E5D34 /* snow.sks */,
 				DF72151E25C86DCE001E03F9 /* WhackSlot.swift */,
 				DF72150B25C86604001E03F9 /* GameViewController.swift */,
 				DF72150D25C86604001E03F9 /* Main.storyboard */,
 				DF72151025C86605001E03F9 /* Assets.xcassets */,
 				DF72151225C86605001E03F9 /* Info.plist */,
-				DF72151B25C866F8001E03F9 /* whack.caf */,
-				DF72151C25C86700001E03F9 /* whackBad.caf */,
+				DFF781F825CB1880003E5D34 /* game.caf */,
+				DFF781EA25CB15D9003E5D34 /* whack.caf */,
+				DFF781EB25CB15D9003E5D34 /* whackBad.caf */,
 			);
 			path = Project14_WhackAPenguin;
 			sourceTree = "<group>";
@@ -136,9 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2258DC25C9CC3D0053EB3E /* whack.caf in Resources */,
-				DF2258DE25C9CC400053EB3E /* whackBad.caf in Resources */,
 				DF72150F25C86604001E03F9 /* Main.storyboard in Resources */,
+				DFF781FA25CB18C5003E5D34 /* game.caf in Resources */,
+				DFF7820C25CB1FA5003E5D34 /* snow.sks in Resources */,
+				DFF781EF25CB15E7003E5D34 /* whack.caf in Resources */,
+				DFF781F125CB15EA003E5D34 /* whackBad.caf in Resources */,
 				DF72150625C86604001E03F9 /* GameScene.sks in Resources */,
 				DF72151125C86605001E03F9 /* Assets.xcassets in Resources */,
 				DF2258C525C990100053EB3E /* smokeParticle.sks in Resources */,

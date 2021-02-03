@@ -45,17 +45,34 @@ class WhackSlot: SKNode {
         isVisible = true
         isHit = false
 
+//        if let mudSplatter = SKEmitterNode(fileNamed: "snow") {
+//            let mudPosition = CGPoint(x: 0, y: 0)
+//            mudSplatter.position = mudPosition
+//            addChild(mudSplatter)
+//        }
+
+        mudSplatter()
+
         if Int.random(in: 0 ... 2) == 0 {
             charNode.texture = SKTexture(imageNamed: "penguinGood")
             charNode.name = "charFriend"
+
         } else {
-            charNode.texture = SKTexture(imageNamed: "donald")
+            charNode.texture = SKTexture(imageNamed: "penguinEvil")
             charNode.name = "charEnemy"
         }
+
 
         DispatchQueue.main.asyncAfter(deadline: .now() + (hideTime * 3.5)) { [weak self] in
             self?.hide()
         }
+    }
+
+    func hide() {
+        if !isVisible { return }
+
+        charNode.run(SKAction.moveBy(x: 0, y: -80, duration: 0.05))
+        isVisible = false
     }
 
     func hit() {
@@ -68,14 +85,24 @@ class WhackSlot: SKNode {
         let delay = SKAction.wait(forDuration: 0.25)
         let hide = SKAction.moveBy(x: 0, y: -80, duration: 0.5)
         let notVisible = SKAction.run { [unowned self] in self.isVisible = false }
+//        let sequence = SKAction.sequence([delay, hide, notVisible])
+//        charNode.run(sequence)
         charNode.run(SKAction.sequence([delay, hide, notVisible]))
     }
 
-    func hide() {
-        if !isVisible { return }
+    func mudSplatter() {
+        if let mudSplatter = SKEmitterNode(fileNamed: "snow") {
 
-        charNode.run(SKAction.moveBy(x: 0, y: -80, duration: 0.05))
-        isVisible = false
+            switch isVisible {
+            case true:
+                mudSplatter.position =  CGPoint(x: 0, y: 0)
+            case false:
+                mudSplatter.position = CGPoint(x:0, y: charNode.position.y - 80)
+            }
+            addChild(mudSplatter)
+        }
+
     }
+
 }
 

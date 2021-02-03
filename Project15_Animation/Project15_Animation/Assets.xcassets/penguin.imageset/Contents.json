@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "donald.png",
+      "filename" : "penguin.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "donald@2x.png",
+      "filename" : "penguin@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
