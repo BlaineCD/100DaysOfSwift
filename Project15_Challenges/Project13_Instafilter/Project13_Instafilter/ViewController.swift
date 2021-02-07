@@ -83,7 +83,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             popoverController.sourceRect = sender.bounds
         }
 
-        present(ac, animated: true)
+//        present(ac, animated: true)
     }
 
     func setFilter(action: UIAlertAction) {
