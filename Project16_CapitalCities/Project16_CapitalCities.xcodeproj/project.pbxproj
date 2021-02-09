@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF09340925D1FC2700CBE12E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09340825D1FC2700CBE12E /* WebViewController.swift */; };
 		DFE5E4CB25D19F1300FFF3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E4CA25D19F1300FFF3CE /* AppDelegate.swift */; };
 		DFE5E4CD25D19F1300FFF3CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E4CC25D19F1300FFF3CE /* SceneDelegate.swift */; };
 		DFE5E4CF25D19F1300FFF3CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E4CE25D19F1300FFF3CE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF09340825D1FC2700CBE12E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		DFE5E4C725D19F1300FFF3CE /* Project16_CapitalCities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project16_CapitalCities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE5E4CA25D19F1300FFF3CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE5E4CC25D19F1300FFF3CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				DFE5E4CA25D19F1300FFF3CE /* AppDelegate.swift */,
 				DFE5E4CC25D19F1300FFF3CE /* SceneDelegate.swift */,
 				DFE5E4CE25D19F1300FFF3CE /* ViewController.swift */,
+				DF09340825D1FC2700CBE12E /* WebViewController.swift */,
 				DFE5E4DF25D1A10200FFF3CE /* Capital.swift */,
 				DFE5E4D025D19F1300FFF3CE /* Main.storyboard */,
 				DFE5E4D325D19F1400FFF3CE /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF09340925D1FC2700CBE12E /* WebViewController.swift in Sources */,
 				DFE5E4CF25D19F1300FFF3CE /* ViewController.swift in Sources */,
 				DFE5E4CB25D19F1300FFF3CE /* AppDelegate.swift in Sources */,
 				DFE5E4E025D1A10200FFF3CE /* Capital.swift in Sources */,
