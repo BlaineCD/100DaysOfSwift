@@ -10,6 +10,7 @@ import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
 
+    let possibleEnemies = ["chicken", "cow", "pig", "goat", "Hay"]
     var starfield: SKEmitterNode!
     var player: SKSpriteNode!
     var finalScore: SKLabelNode!
@@ -22,7 +23,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
 
-    let possibleEnemies = ["ball", "hammer", "tv"]
     var enemyCount = 0
     var isGameOver = false
     var gameTimer: Timer?
@@ -39,7 +39,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(starfield)
         starfield.zPosition = -1
 
-        player = SKSpriteNode(imageNamed: "player")
+        player = SKSpriteNode(imageNamed: "tractor")
         player.position = CGPoint(x: 100, y: 384)
         player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.size)
         player.physicsBody?.contactTestBitMask = 1
@@ -101,11 +101,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             location.y = 668
         }
         player.position = location
-    }
+        }
+
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         endGame()
-    }
+        }
 
     func didBegin(_ contact: SKPhysicsContact) {
         endGame()
@@ -123,13 +124,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         finalScore.text = "Final Score: \(score)"
         addChild(finalScore)
 
-//        newGameLabel = SKLabelNode(fontNamed: "Trebuchet MS")
-//        newGameLabel.fontSize = 36
-//        newGameLabel.position = CGPoint(x: 512, y: 340)
-//        newGameLabel.horizontalAlignmentMode = .center
-//        newGameLabel.text = "Start New Game"
-//        newGameLabel.fontColor = .red
-//        addChild(newGameLabel)
+        newGameLabel = SKLabelNode(fontNamed: "Trebuchet MS")
+        newGameLabel.position = CGPoint(x: 512, y: 340)
+        newGameLabel.horizontalAlignmentMode = .center
+        newGameLabel.text = "New Game"
+        newGameLabel.fontColor = .yellow
+        addChild(newGameLabel)
 
         scoreLabel.removeFromParent()
         player.removeFromParent()
