@@ -10,29 +10,60 @@ import SpriteKit
 
 class GameScene: SKScene {
 
-    var gameTimer: Timer?
-    var fireworks = [SKNode]()
-
     let leftEdge = -22
     let bottomEdge = -22
     let rightEdge = 1024 + 22
 
-    var score = 0
+    var gameTimer: Timer?
+    var fireworks = [SKNode]()
 
-    var scoreLabel: SKLabelNode! {
+    var scoreLabel: SKLabelNode!
+
+    var score = 0 {
         didSet {
             scoreLabel.text = "Score: \(score)"
         }
     }
 
+    var launchesInRound = 10
+    var numOfLaunchesLabel: SKLabelNode!
+    var numOfLaunches = 0 {
+        didSet {
+            numOfLaunchesLabel.text = "Launches: \(numOfLaunches) / 10"
+        }
+    }
+
+    var finalScoreLabel: SKLabelNode!
+    var newGameLabel: SKLabelNode!
+
     // MARK: Internal
 
     override func didMove(to view: SKView) {
 
-        createBackground()
+        let background = SKSpriteNode(imageNamed: "background")
+        background.position = CGPoint(x: 512, y: 384)
+        background.blendMode = .replace
+        background.zPosition = -1
+        addChild(background)
+
+        scoreLabel = SKLabelNode(fontNamed: "Trebuchet MS")
+        scoreLabel.fontColor = .yellow
+        scoreLabel.fontSize = 24
+        scoreLabel.horizontalAlignmentMode = .left
+        scoreLabel.position = CGPoint(x: 16, y: 16)
+        addChild(scoreLabel)
+
+        numOfLaunchesLabel = SKLabelNode(fontNamed: "Trebuchet MS")
+        numOfLaunchesLabel.fontColor = .yellow
+        numOfLaunchesLabel.fontSize = 24
+        numOfLaunchesLabel.horizontalAlignmentMode = .left
+        numOfLaunchesLabel.position = CGPoint(x: 16, y: 42)
+        addChild(numOfLaunchesLabel)
 
         gameTimer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(launchFireworks), userInfo: nil, repeats: true)
     }
+
+    //New Game method: reset and set
 
     // creates a single firework
     func createFirework(xMovement: CGFloat, x: Int, y: Int) {
@@ -103,6 +134,32 @@ class GameScene: SKScene {
         default:
             break
         }
+        numOfLaunches += 1
+        if numOfLaunches > launchesInRound {
+            endGame()
+            return 
+        }
+    }
+
+    func endGame() {
+        gameTimer?.invalidate()
+
+        for node in fireworks {
+            node.removeFromParent()
+
+            //Add New Game
+        }
+
+        finalScoreLabel = SKLabelNode(fontNamed: "Trebuchet MS")
+        finalScoreLabel.text = "Final Score: \(score)"
+        finalScoreLabel.fontColor = .yellow
+        finalScoreLabel.fontSize = 72
+        finalScoreLabel.horizontalAlignmentMode = .center
+        finalScoreLabel.position = CGPoint(x: 512, y: 384)
+        addChild(finalScoreLabel)
+
+        scoreLabel.removeFromParent()
+        numOfLaunchesLabel.removeFromParent()
     }
 
     func checkTouches(_ touches: Set<UITouch>) {
@@ -125,6 +182,8 @@ class GameScene: SKScene {
             node.name = "selected"
             node.colorBlendFactor = 0
         }
+        //add explode button
+        //add new game
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -146,13 +205,46 @@ class GameScene: SKScene {
         }
     }
 
-    // MARK: Fileprivate
+    func explode(firework: SKNode) {
+        if let emitter = SKEffectNode(fileNamed: "explode") {
+            emitter.position = firework.position
+            addChild(emitter)
 
-    fileprivate func createBackground() {
-        let background = SKSpriteNode(imageNamed: "background")
-        background.position = CGPoint(x: 512, y: 384)
-        background.blendMode = .replace
-        background.zPosition = -1
-        addChild(background)
+//        firework.removeFromParent()
+            let wait = SKAction.wait(forDuration: 3)
+        let remove = SKAction.run { emitter.removeFromParent() }
+        let sequence = SKAction.sequence([wait, remove])
+        emitter.run(sequence)
+    }
+        firework.removeFromParent()
+    }
+
+    func explodeFireworks() {
+        var numExploded = 0
+
+        for (index, fireworkContainer) in fireworks.enumerated().reversed() {
+            guard let firework = fireworkContainer.children.first as? SKSpriteNode else { continue }
+
+            if firework.name == "selected" {
+                explode(firework: fireworkContainer)
+                fireworks.remove(at: index)
+                numExploded += 1
+            }
+        }
+
+        switch numExploded {
+        case 0:
+            break
+        case 1:
+            score += 200
+        case 2:
+            score += 500
+        case 3:
+            score += 1500
+        case 4:
+            score += 2500
+        default:
+            score += 4000
+        }
     }
 }
