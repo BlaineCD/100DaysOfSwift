@@ -12,15 +12,12 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Register", style: .plain, target: self, action: #selector(registerLocal))
-
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Schedule", style: .plain, target: self, action: #selector(scheduleLocal))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Schedule", style: .plain, target: self, action: #selector(setNotification))
     }
 
     @objc func registerLocal() {
         let center = UNUserNotificationCenter.current()
-
         center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if granted {
                 print("Yay")
@@ -30,24 +27,28 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         }
     }
 
-    @objc func scheduleLocal() {
+    @objc func setNotification(){
+        scheduleLocal(seconds: 5)
+    }
+
+    func scheduleLocal(seconds: TimeInterval) {
         registerCategories()
         let center = UNUserNotificationCenter.current()
 
         let content = UNMutableNotificationContent()
-        content.title = "Late Wake Up Call"
-        content.body = "The early bird catches the worm"
+        content.title = "Cabbage Road Race Registration"
+        content.body = "Registration for the 5K is open. Sign up now!"
         content.categoryIdentifier = "alarm"
         content.userInfo = ["customData": "fizzbuzz"]
         content.sound = UNNotificationSound.default
 
-        var dateComponents = DateComponents()
-        dateComponents.hour = 10
-        dateComponents.minute = 30
+//        var dateComponents = DateComponents()
+//        dateComponents.hour = 10
+//        dateComponents.minute = 30
 //        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+//        center.removeAllPendingNotificationRequests()
 
-        center.removeAllPendingNotificationRequests()
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: seconds, repeats: false)
 
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         center.add(request)
@@ -57,8 +58,9 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         let center = UNUserNotificationCenter.current()
         center.delegate = self
 
-        let show = UNNotificationAction(identifier: "show", title: "Tell me more..", options: .foreground)
-        let category = UNNotificationCategory(identifier: "alarm", actions: [show], intentIdentifiers: [])
+        let show = UNNotificationAction(identifier: "show", title: "Sign Up Now!", options: .foreground)
+        let remind = UNNotificationAction(identifier: "remind", title: "Remind Me Later", options: .foreground)
+        let category = UNNotificationCategory(identifier: "alarm", actions: [show, remind], intentIdentifiers: [])
 
         center.setNotificationCategories([category])
 }
@@ -72,12 +74,16 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 
             switch response.actionIdentifier {
             case UNNotificationDefaultActionIdentifier:
-
+                learnMore()
                 print("Default identifier")
 
             case "show":
-
+                signUpNow()
                 print("Show more information…")
+
+            case "remind":
+            scheduleLocal(seconds: 86400)
+            print("Remind me later...")
 
             default:
                 break
@@ -86,6 +92,18 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 
 
         completionHandler()
+    }
+
+    func signUpNow() {
+        let ac = UIAlertController(title: "Sign Up Now", message: nil, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
+
+    func learnMore() {
+        let ac = UIAlertController(title: "Remind me later today", message: nil, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
     }
 }
 
