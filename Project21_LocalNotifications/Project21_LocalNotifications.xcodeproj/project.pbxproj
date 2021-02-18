@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF5A8DEE25DCBEB9007FD985 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = DF5A8DED25DCBEB9007FD985 /* explosion.wav */; };
-		DFE06A2D25DADC1B005F4E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE06A2C25DADC1B005F4E8C /* AppDelegate.swift */; };
-		DFE06A2F25DADC1C005F4E8C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DFE06A2E25DADC1C005F4E8C /* GameScene.sks */; };
-		DFE06A3325DADC1C005F4E8C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE06A3225DADC1C005F4E8C /* GameScene.swift */; };
-		DFE06A3525DADC1C005F4E8C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE06A3425DADC1C005F4E8C /* GameViewController.swift */; };
-		DFE06A3825DADC1C005F4E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE06A3625DADC1C005F4E8C /* Main.storyboard */; };
-		DFE06A3A25DADC1C005F4E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE06A3925DADC1C005F4E8C /* Assets.xcassets */; };
-		DFE06A4625DADE44005F4E8C /* explode.sks in Resources */ = {isa = PBXBuildFile; fileRef = DFE06A4425DADE44005F4E8C /* explode.sks */; };
-		DFE06A4725DADE44005F4E8C /* fuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = DFE06A4525DADE44005F4E8C /* fuse.sks */; };
+		DF5A8E0F25DDB995007FD985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A8E0E25DDB995007FD985 /* AppDelegate.swift */; };
+		DF5A8E1125DDB995007FD985 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A8E1025DDB995007FD985 /* SceneDelegate.swift */; };
+		DF5A8E1325DDB995007FD985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A8E1225DDB995007FD985 /* ViewController.swift */; };
+		DF5A8E1625DDB995007FD985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5A8E1425DDB995007FD985 /* Main.storyboard */; };
+		DF5A8E1825DDB996007FD985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5A8E1725DDB996007FD985 /* Assets.xcassets */; };
+		DF5A8E1B25DDB996007FD985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5A8E1925DDB996007FD985 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF5A8DED25DCBEB9007FD985 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion.wav; sourceTree = "<group>"; };
-		DFE06A2925DADC1B005F4E8C /* Project20_FireworksNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project20_FireworksNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFE06A2C25DADC1B005F4E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFE06A2E25DADC1C005F4E8C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DFE06A3225DADC1C005F4E8C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		DFE06A3425DADC1C005F4E8C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		DFE06A3725DADC1C005F4E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DFE06A3925DADC1C005F4E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DFE06A3B25DADC1C005F4E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DFE06A4425DADE44005F4E8C /* explode.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explode.sks; sourceTree = "<group>"; };
-		DFE06A4525DADE44005F4E8C /* fuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fuse.sks; sourceTree = "<group>"; };
+		DF5A8E0B25DDB995007FD985 /* Project21_LocalNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project21_LocalNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5A8E0E25DDB995007FD985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF5A8E1025DDB995007FD985 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF5A8E1225DDB995007FD985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF5A8E1525DDB995007FD985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF5A8E1725DDB996007FD985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF5A8E1A25DDB996007FD985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF5A8E1C25DDB996007FD985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DFE06A2625DADC1B005F4E8C /* Frameworks */ = {
+		DF5A8E0825DDB995007FD985 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,74 +37,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DFE06A2025DADC1B005F4E8C = {
+		DF5A8E0225DDB995007FD985 = {
 			isa = PBXGroup;
 			children = (
-				DFE06A2B25DADC1B005F4E8C /* Project20_FireworksNight */,
-				DFE06A2A25DADC1B005F4E8C /* Products */,
+				DF5A8E0D25DDB995007FD985 /* Project21_LocalNotifications */,
+				DF5A8E0C25DDB995007FD985 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DFE06A2A25DADC1B005F4E8C /* Products */ = {
+		DF5A8E0C25DDB995007FD985 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DFE06A2925DADC1B005F4E8C /* Project20_FireworksNight.app */,
+				DF5A8E0B25DDB995007FD985 /* Project21_LocalNotifications.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DFE06A2B25DADC1B005F4E8C /* Project20_FireworksNight */ = {
+		DF5A8E0D25DDB995007FD985 /* Project21_LocalNotifications */ = {
 			isa = PBXGroup;
 			children = (
-				DFE06A2C25DADC1B005F4E8C /* AppDelegate.swift */,
-				DFE06A3225DADC1C005F4E8C /* GameScene.swift */,
-				DFE06A2E25DADC1C005F4E8C /* GameScene.sks */,
-				DFE06A3425DADC1C005F4E8C /* GameViewController.swift */,
-				DFE06A3625DADC1C005F4E8C /* Main.storyboard */,
-				DFE06A3925DADC1C005F4E8C /* Assets.xcassets */,
-				DFE06A3B25DADC1C005F4E8C /* Info.plist */,
-				DFE06A4425DADE44005F4E8C /* explode.sks */,
-				DFE06A4525DADE44005F4E8C /* fuse.sks */,
-				DF5A8DED25DCBEB9007FD985 /* explosion.wav */,
+				DF5A8E0E25DDB995007FD985 /* AppDelegate.swift */,
+				DF5A8E1025DDB995007FD985 /* SceneDelegate.swift */,
+				DF5A8E1225DDB995007FD985 /* ViewController.swift */,
+				DF5A8E1425DDB995007FD985 /* Main.storyboard */,
+				DF5A8E1725DDB996007FD985 /* Assets.xcassets */,
+				DF5A8E1925DDB996007FD985 /* LaunchScreen.storyboard */,
+				DF5A8E1C25DDB996007FD985 /* Info.plist */,
 			);
-			path = Project20_FireworksNight;
+			path = Project21_LocalNotifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DFE06A2825DADC1B005F4E8C /* Project20_FireworksNight */ = {
+		DF5A8E0A25DDB995007FD985 /* Project21_LocalNotifications */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFE06A3E25DADC1C005F4E8C /* Build configuration list for PBXNativeTarget "Project20_FireworksNight" */;
+			buildConfigurationList = DF5A8E1F25DDB996007FD985 /* Build configuration list for PBXNativeTarget "Project21_LocalNotifications" */;
 			buildPhases = (
-				DFE06A2525DADC1B005F4E8C /* Sources */,
-				DFE06A2625DADC1B005F4E8C /* Frameworks */,
-				DFE06A2725DADC1B005F4E8C /* Resources */,
+				DF5A8E0725DDB995007FD985 /* Sources */,
+				DF5A8E0825DDB995007FD985 /* Frameworks */,
+				DF5A8E0925DDB995007FD985 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Project20_FireworksNight;
-			productName = Project20_FireworksNight;
-			productReference = DFE06A2925DADC1B005F4E8C /* Project20_FireworksNight.app */;
+			name = Project21_LocalNotifications;
+			productName = Project21_LocalNotifications;
+			productReference = DF5A8E0B25DDB995007FD985 /* Project21_LocalNotifications.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DFE06A2125DADC1B005F4E8C /* Project object */ = {
+		DF5A8E0325DDB995007FD985 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					DFE06A2825DADC1B005F4E8C = {
+					DF5A8E0A25DDB995007FD985 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = DFE06A2425DADC1B005F4E8C /* Build configuration list for PBXProject "Project20_FireworksNight" */;
+			buildConfigurationList = DF5A8E0625DDB995007FD985 /* Build configuration list for PBXProject "Project21_LocalNotifications" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,58 +109,63 @@
 				en,
 				Base,
 			);
-			mainGroup = DFE06A2025DADC1B005F4E8C;
-			productRefGroup = DFE06A2A25DADC1B005F4E8C /* Products */;
+			mainGroup = DF5A8E0225DDB995007FD985;
+			productRefGroup = DF5A8E0C25DDB995007FD985 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DFE06A2825DADC1B005F4E8C /* Project20_FireworksNight */,
+				DF5A8E0A25DDB995007FD985 /* Project21_LocalNotifications */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DFE06A2725DADC1B005F4E8C /* Resources */ = {
+		DF5A8E0925DDB995007FD985 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5A8DEE25DCBEB9007FD985 /* explosion.wav in Resources */,
-				DFE06A3825DADC1C005F4E8C /* Main.storyboard in Resources */,
-				DFE06A2F25DADC1C005F4E8C /* GameScene.sks in Resources */,
-				DFE06A4725DADE44005F4E8C /* fuse.sks in Resources */,
-				DFE06A3A25DADC1C005F4E8C /* Assets.xcassets in Resources */,
-				DFE06A4625DADE44005F4E8C /* explode.sks in Resources */,
+				DF5A8E1B25DDB996007FD985 /* LaunchScreen.storyboard in Resources */,
+				DF5A8E1825DDB996007FD985 /* Assets.xcassets in Resources */,
+				DF5A8E1625DDB995007FD985 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DFE06A2525DADC1B005F4E8C /* Sources */ = {
+		DF5A8E0725DDB995007FD985 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE06A3325DADC1C005F4E8C /* GameScene.swift in Sources */,
-				DFE06A3525DADC1C005F4E8C /* GameViewController.swift in Sources */,
-				DFE06A2D25DADC1B005F4E8C /* AppDelegate.swift in Sources */,
+				DF5A8E1325DDB995007FD985 /* ViewController.swift in Sources */,
+				DF5A8E0F25DDB995007FD985 /* AppDelegate.swift in Sources */,
+				DF5A8E1125DDB995007FD985 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DFE06A3625DADC1C005F4E8C /* Main.storyboard */ = {
+		DF5A8E1425DDB995007FD985 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DFE06A3725DADC1C005F4E8C /* Base */,
+				DF5A8E1525DDB995007FD985 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF5A8E1925DDB996007FD985 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF5A8E1A25DDB996007FD985 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DFE06A3C25DADC1C005F4E8C /* Debug */ = {
+		DF5A8E1D25DDB996007FD985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		DFE06A3D25DADC1C005F4E8C /* Release */ = {
+		DF5A8E1E25DDB996007FD985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,68 +281,66 @@
 			};
 			name = Release;
 		};
-		DFE06A3F25DADC1C005F4E8C /* Debug */ = {
+		DF5A8E2025DDB996007FD985 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQGUF324D5;
-				INFOPLIST_FILE = Project20_FireworksNight/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				INFOPLIST_FILE = Project21_LocalNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project20-FireworksNight";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project21-LocalNotifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DFE06A4025DADC1C005F4E8C /* Release */ = {
+		DF5A8E2125DDB996007FD985 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQGUF324D5;
-				INFOPLIST_FILE = Project20_FireworksNight/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				INFOPLIST_FILE = Project21_LocalNotifications/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project20-FireworksNight";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Project21-LocalNotifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DFE06A2425DADC1B005F4E8C /* Build configuration list for PBXProject "Project20_FireworksNight" */ = {
+		DF5A8E0625DDB995007FD985 /* Build configuration list for PBXProject "Project21_LocalNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFE06A3C25DADC1C005F4E8C /* Debug */,
-				DFE06A3D25DADC1C005F4E8C /* Release */,
+				DF5A8E1D25DDB996007FD985 /* Debug */,
+				DF5A8E1E25DDB996007FD985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DFE06A3E25DADC1C005F4E8C /* Build configuration list for PBXNativeTarget "Project20_FireworksNight" */ = {
+		DF5A8E1F25DDB996007FD985 /* Build configuration list for PBXNativeTarget "Project21_LocalNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFE06A3F25DADC1C005F4E8C /* Debug */,
-				DFE06A4025DADC1C005F4E8C /* Release */,
+				DF5A8E2025DDB996007FD985 /* Debug */,
+				DF5A8E2125DDB996007FD985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DFE06A2125DADC1B005F4E8C /* Project object */;
+	rootObject = DF5A8E0325DDB995007FD985 /* Project object */;
 }

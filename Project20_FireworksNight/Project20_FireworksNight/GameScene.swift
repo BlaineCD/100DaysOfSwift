@@ -25,47 +25,30 @@ class GameScene: SKScene {
         }
     }
 
-    var launchesInRound = 10
+    var launchesInRound = 3
     var numOfLaunchesLabel: SKLabelNode!
     var numOfLaunches = 0 {
         didSet {
-            numOfLaunchesLabel.text = "Launches: \(numOfLaunches) / 10"
+            numOfLaunchesLabel.text = "Launches: \(numOfLaunches) / 3"
         }
     }
 
+    var explosionSFX: SKAction!
+    var detonateLabel: SKLabelNode!
     var finalScoreLabel: SKLabelNode!
     var newGameLabel: SKLabelNode!
 
     // MARK: Internal
 
     override func didMove(to view: SKView) {
-
-        let background = SKSpriteNode(imageNamed: "background")
-        background.position = CGPoint(x: 512, y: 384)
-        background.blendMode = .replace
-        background.zPosition = -1
-        addChild(background)
-
-        scoreLabel = SKLabelNode(fontNamed: "Trebuchet MS")
-        scoreLabel.fontColor = .yellow
-        scoreLabel.fontSize = 24
-        scoreLabel.horizontalAlignmentMode = .left
-        scoreLabel.position = CGPoint(x: 16, y: 16)
-        addChild(scoreLabel)
-
-        numOfLaunchesLabel = SKLabelNode(fontNamed: "Trebuchet MS")
-        numOfLaunchesLabel.fontColor = .yellow
-        numOfLaunchesLabel.fontSize = 24
-        numOfLaunchesLabel.horizontalAlignmentMode = .left
-        numOfLaunchesLabel.position = CGPoint(x: 16, y: 42)
-        addChild(numOfLaunchesLabel)
-
+        launchBackground()
+        displayLabels()
+        explosionSFX = SKAction.playSoundFileNamed("explosion.wav", waitForCompletion: false)
         gameTimer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(launchFireworks), userInfo: nil, repeats: true)
     }
 
-    //New Game method: reset and set
+    // New Game method: reset and set
 
-    // creates a single firework
     func createFirework(xMovement: CGFloat, x: Int, y: Int) {
         let node = SKNode()
         node.position = CGPoint(x: x, y: y)
@@ -137,7 +120,7 @@ class GameScene: SKScene {
         numOfLaunches += 1
         if numOfLaunches > launchesInRound {
             endGame()
-            return 
+            return
         }
     }
 
@@ -146,20 +129,38 @@ class GameScene: SKScene {
 
         for node in fireworks {
             node.removeFromParent()
-
-            //Add New Game
         }
 
-        finalScoreLabel = SKLabelNode(fontNamed: "Trebuchet MS")
+        scoreLabel.removeFromParent()
+        numOfLaunchesLabel.removeFromParent()
+        detonateLabel.removeFromParent()
+
+        finalScoreLabel = SKLabelNode(fontNamed: "Futura")
         finalScoreLabel.text = "Final Score: \(score)"
-        finalScoreLabel.fontColor = .yellow
+        finalScoreLabel.fontColor = SKColor(named: "TextColor")
         finalScoreLabel.fontSize = 72
         finalScoreLabel.horizontalAlignmentMode = .center
         finalScoreLabel.position = CGPoint(x: 512, y: 384)
         addChild(finalScoreLabel)
 
-        scoreLabel.removeFromParent()
-        numOfLaunchesLabel.removeFromParent()
+        newGameLabel = SKLabelNode(fontNamed: "Futura")
+        newGameLabel.text = "✨START✨NEW✨GAME✨"
+        newGameLabel.fontColor = SKColor(named: "TextColor")
+        newGameLabel.fontSize = 44
+        newGameLabel.horizontalAlignmentMode = .center
+        newGameLabel.position = CGPoint(x: 512, y: 320)
+        newGameLabel.name = "restart"
+        addChild(newGameLabel)
+    }
+
+    func startNewGame() {
+        score = 0
+        numOfLaunches = 0
+        finalScoreLabel.removeFromParent()
+        newGameLabel.removeFromParent()
+        addChild(detonateLabel)
+
+        gameTimer = Timer.scheduledTimer(timeInterval: 6.0, target: self, selector: #selector(launchFireworks), userInfo: nil, repeats: true)
     }
 
     func checkTouches(_ touches: Set<UITouch>) {
@@ -167,6 +168,19 @@ class GameScene: SKScene {
 
         let location = touch.location(in: self)
         let nodesAtPoint = nodes(at: location)
+
+        for case let node as SKLabelNode in nodesAtPoint {
+            if node.name == "detonate" {
+                explodeFireworks()
+//                run(explosionSFX)
+                return
+            }
+
+            if node.name == "restart" {
+                startNewGame()
+                return
+            }
+        }
 
         for case let node as SKSpriteNode in nodesAtPoint {
             guard node.name == "firework" else { continue }
@@ -182,8 +196,6 @@ class GameScene: SKScene {
             node.name = "selected"
             node.colorBlendFactor = 0
         }
-        //add explode button
-        //add new game
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -210,12 +222,11 @@ class GameScene: SKScene {
             emitter.position = firework.position
             addChild(emitter)
 
-//        firework.removeFromParent()
             let wait = SKAction.wait(forDuration: 3)
-        let remove = SKAction.run { emitter.removeFromParent() }
-        let sequence = SKAction.sequence([wait, remove])
-        emitter.run(sequence)
-    }
+            let remove = SKAction.run { emitter.removeFromParent() }
+            let sequence = SKAction.sequence([wait, remove])
+            emitter.run(sequence)
+        }
         firework.removeFromParent()
     }
 
@@ -227,6 +238,7 @@ class GameScene: SKScene {
 
             if firework.name == "selected" {
                 explode(firework: fireworkContainer)
+                run(explosionSFX)
                 fireworks.remove(at: index)
                 numExploded += 1
             }
@@ -247,4 +259,47 @@ class GameScene: SKScene {
             score += 4000
         }
     }
+
+    // MARK: Fileprivate
+
+    fileprivate func launchBackground() {
+        let background = SKSpriteNode(imageNamed: "background")
+        background.position = CGPoint(x: 512, y: 384)
+        background.blendMode = .replace
+        background.zPosition = -1
+        addChild(background)
+    }
+
+    fileprivate func displayLabels() {
+        scoreLabel = SKLabelNode(fontNamed: "Futura")
+        scoreLabel.fontColor = SKColor(named: "TextColor")
+        scoreLabel.text = "Score: 0"
+        scoreLabel.fontSize = 32
+        scoreLabel.horizontalAlignmentMode = .left
+        scoreLabel.position = CGPoint(x: 16, y: 24)
+        addChild(scoreLabel)
+
+        numOfLaunchesLabel = SKLabelNode(fontNamed: "Futura")
+        numOfLaunchesLabel.fontColor = SKColor(named: "TextColor")
+        numOfLaunchesLabel.text = "Launches: 0 / 3"
+        numOfLaunchesLabel.fontSize = 32
+        numOfLaunchesLabel.horizontalAlignmentMode = .left
+        numOfLaunchesLabel.position = CGPoint(x: 16, y: 64)
+        addChild(numOfLaunchesLabel)
+
+        detonateLabel = SKLabelNode(fontNamed: "Futura")
+        detonateLabel.text = "💥"
+        detonateLabel.fontSize = 125
+        detonateLabel.horizontalAlignmentMode = .right
+        detonateLabel.position = CGPoint(x: 1000, y: 56)
+        detonateLabel.name = "detonate"
+        detonateLabel.zPosition = 1
+        addChild(detonateLabel)
+
+        if let emitter = SKEmitterNode(fileNamed: "fuse") {
+            emitter.position = CGPoint(x: -50, y: 25)
+            detonateLabel.addChild(emitter)
+        }
+    }
+
 }
