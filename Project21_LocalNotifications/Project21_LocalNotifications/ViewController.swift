@@ -35,9 +35,15 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         registerCategories()
         let center = UNUserNotificationCenter.current()
 
+        let quotes = [
+            "Every morning we are born again. What we do today is what matters most - Buddha",
+            "Every morning was a cheerful invitation to make my life of equal simplicity, and I may say innocence, with Nature herself. - Thoreau",
+            "To simply wake up every morning a better person than when I went to bed. - Sidney Poitier"
+        ]
+
         let content = UNMutableNotificationContent()
-        content.title = "Cabbage Road Race Registration"
-        content.body = "Registration for the 5K is open. Sign up now!"
+        content.title = "Wake Up"
+        content.body = quotes.randomElement()!
         content.categoryIdentifier = "alarm"
         content.userInfo = ["customData": "fizzbuzz"]
         content.sound = UNNotificationSound.default
@@ -58,8 +64,8 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         let center = UNUserNotificationCenter.current()
         center.delegate = self
 
-        let show = UNNotificationAction(identifier: "show", title: "Sign Up Now!", options: .foreground)
-        let remind = UNNotificationAction(identifier: "remind", title: "Remind Me Later", options: .foreground)
+        let show = UNNotificationAction(identifier: "show", title: "OK, I'm awake.", options: .foreground)
+        let remind = UNNotificationAction(identifier: "remind", title: "Snooze...", options: .foreground)
         let category = UNNotificationCategory(identifier: "alarm", actions: [show, remind], intentIdentifiers: [])
 
         center.setNotificationCategories([category])
@@ -82,7 +88,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
                 print("Show more information…")
 
             case "remind":
-            scheduleLocal(seconds: 86400)
+            scheduleLocal(seconds: 6)
             print("Remind me later...")
 
             default:
@@ -95,13 +101,13 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     }
 
     func signUpNow() {
-        let ac = UIAlertController(title: "Sign Up Now", message: nil, preferredStyle: .alert)
+        let ac = UIAlertController(title: "OK, I'm awake", message: nil, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }
 
     func learnMore() {
-        let ac = UIAlertController(title: "Remind me later today", message: nil, preferredStyle: .alert)
+        let ac = UIAlertController(title: "Snooze", message: "6 more seconds of sleep.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }
