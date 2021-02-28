@@ -13,7 +13,6 @@
 		DF731BC825E6AC0700B081AE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF731BC725E6AC0700B081AE /* GameViewController.swift */; };
 		DF731BCB25E6AC0700B081AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF731BC925E6AC0700B081AE /* Main.storyboard */; };
 		DF731BCD25E6AC0900B081AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF731BCC25E6AC0900B081AE /* Assets.xcassets */; };
-		DF731BDD25E6AE4600B081AE /* sliceBombFuse.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF731BD925E6AE4600B081AE /* sliceBombFuse.caf */; };
 		DF731BDE25E6AE4600B081AE /* sliceHitBomb.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF731BDA25E6AE4600B081AE /* sliceHitBomb.sks */; };
 		DF731BDF25E6AE4600B081AE /* sliceFuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF731BDB25E6AE4600B081AE /* sliceFuse.sks */; };
 		DF731BE025E6AE4600B081AE /* sliceHitEnemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF731BDC25E6AE4600B081AE /* sliceHitEnemy.sks */; };
@@ -24,6 +23,7 @@
 		DFAFC88025E6F570005B5F10 /* launch.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF731BD725E6AE3B00B081AE /* launch.caf */; };
 		DFAFC88125E6F570005B5F10 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF731BE425E6AE5300B081AE /* whack.caf */; };
 		DFAFC88225E6F570005B5F10 /* wrong.caf in Resources */ = {isa = PBXBuildFile; fileRef = DF731BE525E6AE5300B081AE /* wrong.caf */; };
+		DFCAABAB25E95E15002BF9F1 /* goat.wav in Resources */ = {isa = PBXBuildFile; fileRef = DFCAABAA25E95E15002BF9F1 /* goat.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,6 @@
 		DF731BCE25E6AC0900B081AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF731BD725E6AE3B00B081AE /* launch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = launch.caf; sourceTree = "<group>"; };
 		DF731BD825E6AE3B00B081AE /* explosion.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.caf; sourceTree = "<group>"; };
-		DF731BD925E6AE4600B081AE /* sliceBombFuse.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sliceBombFuse.caf; sourceTree = "<group>"; };
 		DF731BDA25E6AE4600B081AE /* sliceHitBomb.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitBomb.sks; sourceTree = "<group>"; };
 		DF731BDB25E6AE4600B081AE /* sliceFuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceFuse.sks; sourceTree = "<group>"; };
 		DF731BDC25E6AE4600B081AE /* sliceHitEnemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitEnemy.sks; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		DFAFC87425E6E63A005B5F10 /* swoosh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh2.caf; sourceTree = "<group>"; };
 		DFAFC87525E6E63A005B5F10 /* swoosh3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh3.caf; sourceTree = "<group>"; };
 		DFAFC87625E6E63A005B5F10 /* swoosh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh1.caf; sourceTree = "<group>"; };
+		DFCAABAA25E95E15002BF9F1 /* goat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = goat.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +93,9 @@
 				DFAFC87525E6E63A005B5F10 /* swoosh3.caf */,
 				DF731BD825E6AE3B00B081AE /* explosion.caf */,
 				DF731BD725E6AE3B00B081AE /* launch.caf */,
-				DF731BD925E6AE4600B081AE /* sliceBombFuse.caf */,
 				DF731BE425E6AE5300B081AE /* whack.caf */,
 				DF731BE525E6AE5300B081AE /* wrong.caf */,
+				DFCAABAA25E95E15002BF9F1 /* goat.wav */,
 			);
 			path = Project23_SwiftyNinja;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 				DFAFC87E25E6F570005B5F10 /* swoosh3.caf in Resources */,
 				DFAFC87F25E6F570005B5F10 /* explosion.caf in Resources */,
 				DFAFC88025E6F570005B5F10 /* launch.caf in Resources */,
+				DFCAABAB25E95E15002BF9F1 /* goat.wav in Resources */,
 				DFAFC88125E6F570005B5F10 /* whack.caf in Resources */,
 				DFAFC88225E6F570005B5F10 /* wrong.caf in Resources */,
-				DF731BDD25E6AE4600B081AE /* sliceBombFuse.caf in Resources */,
 				DF731BE025E6AE4600B081AE /* sliceHitEnemy.sks in Resources */,
 				DF731BCB25E6AC0700B081AE /* Main.storyboard in Resources */,
 				DF731BC225E6AC0700B081AE /* GameScene.sks in Resources */,
