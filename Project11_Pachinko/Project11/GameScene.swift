@@ -84,40 +84,38 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
-            let location = touch.location(in: self)
-            let objects = nodes(at: location)
+        let location = touch.location(in: self)
+        let objects = nodes(at: location)
 
-            if objects.contains(newGameLabel) {
+        if objects.contains(newGameLabel) {
             newGame()
-        }
-
-             else if objects.contains(editLabel) {
-                editingMode.toggle()
+        } else if objects.contains(editLabel) {
+            editingMode.toggle()
+        } else {
+            if editingMode {
+                let size = CGSize(width: Int.random(in: 16 ... 128), height: 16)
+                let box = SKSpriteNode(color: UIColor(red: CGFloat.random(in: 0 ... 1), green: CGFloat.random(in: 0 ... 1), blue: CGFloat.random(in: 0 ... 1), alpha: 1), size: size)
+                box.zRotation = CGFloat.random(in: 0 ... 3)
+                box.position = location
+                box.name = "box"
+                box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
+                box.physicsBody?.isDynamic = false
+                addChild(box)
             } else {
-                if editingMode {
-                    let size = CGSize(width: Int.random(in: 16 ... 128), height: 16)
-                    let box = SKSpriteNode(color: UIColor(red: CGFloat.random(in: 0 ... 1), green: CGFloat.random(in: 0 ... 1), blue: CGFloat.random(in: 0 ... 1), alpha: 1), size: size)
-                    box.zRotation = CGFloat.random(in: 0 ... 3)
-                    box.position = location
-                    box.name = "box"
-                    box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
-                    box.physicsBody?.isDynamic = false
-                    addChild(box)
-                } else {
-                    guard let randomBall = balls.randomElement() else { return }
-                    let ball = SKSpriteNode(imageNamed: randomBall)
-                    ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
-                    ball.physicsBody!.contactTestBitMask = ball.physicsBody!.collisionBitMask
-                    ball.physicsBody?.restitution = 0.4
+                guard let randomBall = balls.randomElement() else { return }
+                let ball = SKSpriteNode(imageNamed: randomBall)
+                ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
+                ball.physicsBody!.contactTestBitMask = ball.physicsBody!.collisionBitMask
+                ball.physicsBody?.restitution = 0.4
 //                    ball.position = location
-                    ball.position.x = location.x
-                    ball.position.y = 768
-                    ball.name = "ball"
-                    if ballsRemaining <= 0 {
-                        if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
-                            fireParticles.position = location
-                            addChild(fireParticles)
-                        }
+                ball.position.x = location.x
+                ball.position.y = 768
+                ball.name = "ball"
+                if ballsRemaining <= 0 {
+                    if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
+                        fireParticles.position = location
+                        addChild(fireParticles)
+                    }
                     return
                 }
                 ballsRemaining -= 1
@@ -125,7 +123,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
         }
     }
-
 
     func makeBouncer(at position: CGPoint) {
         let bouncer = SKSpriteNode(imageNamed: "bouncer")
@@ -207,5 +204,4 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             collisionBetween(ball: nodeB, object: nodeA)
         }
     }
-
 }

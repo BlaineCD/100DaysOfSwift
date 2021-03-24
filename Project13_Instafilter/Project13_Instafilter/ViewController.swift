@@ -97,7 +97,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let ac = UIAlertController(title: "No Image Selected!", message: "Please select a photo from your libary.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
-           return
+            return
         }
 
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError: contextInfo:)), nil)
@@ -132,9 +132,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         guard let outputImage = currentFilter.outputImage else { return }
 
-            if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
-                let processedImage = UIImage(cgImage: cgImage)
-                imageView.image = processedImage
+        if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
+            let processedImage = UIImage(cgImage: cgImage)
+            imageView.image = processedImage
         }
     }
 

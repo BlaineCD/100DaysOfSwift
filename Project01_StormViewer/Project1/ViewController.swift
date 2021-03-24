@@ -12,7 +12,7 @@ class ViewController: UITableViewController {
     var stormDictionary = [String: Int]()
 
     // MARK: Lifecycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,19 +31,7 @@ class ViewController: UITableViewController {
             pictures.sort()
         }
 
-        let defaults = UserDefaults.standard
-        if let savedData = defaults.object(forKey: "stormDictionary") as? Data,
-           let savedPictures = defaults.object(forKey: "pictures") as? Data
-        {
-            let jsonDecoder = JSONDecoder()
-
-            do {
-                stormDictionary = try jsonDecoder.decode([String: Int].self, from: savedData)
-                pictures = try jsonDecoder.decode([String].self, from: savedPictures)
-            } catch {
-                print("Failed")
-            }
-        }
+        load()
     }
 
     // MARK: Internal
@@ -74,15 +62,28 @@ class ViewController: UITableViewController {
     }
 
     func save() {
-        let jsonEncoder = JSONEncoder()
-        if let savedData = try? jsonEncoder.encode(stormDictionary),
-           let savedPictures = try? jsonEncoder.encode(pictures)
+        if let savedData = try? JSONEncoder().encode(stormDictionary),
+           let savedPictures = try? JSONEncoder().encode(pictures)
         {
             let defaults = UserDefaults.standard
             defaults.set(savedData, forKey: "stormDictionary")
             defaults.set(savedPictures, forKey: "pictures")
         } else {
             print("Failed")
+        }
+    }
+
+    func load() {
+        let defaults = UserDefaults.standard
+        if let savedData = defaults.object(forKey: "stormDictionary") as? Data,
+           let savedPictures = defaults.object(forKey: "pictures") as? Data
+        {
+            do {
+                stormDictionary = try JSONDecoder().decode([String: Int].self, from: savedData)
+                pictures = try JSONDecoder().decode([String].self, from: savedPictures)
+            } catch {
+                print("Failed")
+            }
         }
     }
 }

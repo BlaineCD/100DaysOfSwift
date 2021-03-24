@@ -9,16 +9,15 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
+
     var selectedImage: String?
-    var selectedImageNum = 0
-    var totalImages = 0
 
     // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        assert((selectedImage != nil), "No Value")
+        assert(selectedImage != nil, "No Value")
 
         navigationItem.largeTitleDisplayMode = .never
 
@@ -33,6 +32,8 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.hidesBarsOnTap = true
     }
+
+    // MARK: Internal
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

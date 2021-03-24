@@ -23,7 +23,7 @@
                                 </constraints>
                                 <state key="normal" title="Authenticate"/>
                                 <connections>
-                                    <action selector="authentifcateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6XS-cD-oIo"/>
+                                    <action selector="authenticateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JL7-jo-Jco"/>
                                 </connections>
                             </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K8r-jm-aOI">

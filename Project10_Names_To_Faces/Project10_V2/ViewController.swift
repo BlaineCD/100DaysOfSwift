@@ -32,16 +32,13 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Person", for: indexPath) as? PersonCell else {
             fatalError("Unable to dequeue Person Cell")
         }
-        // Pull out the person from the people array at the correct position
         let person = people[indexPath.item]
-        // Assign person name to the text of the label.
         cell.name.text = person.name
 
         // Create a UIImage from the person's image filename, adding it to the value from getDocDir() so that we have path for the image.
         let path = getDocumentsDirectory().appendingPathComponent(person.image)
         cell.imageView.image = UIImage(contentsOfFile: path.path)
 
-        // Add border and rounded corners.
         cell.imageView.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
         cell.imageView.layer.borderWidth = 2
         cell.imageView.layer.cornerRadius = 60

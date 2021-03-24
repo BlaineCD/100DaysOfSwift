@@ -10,6 +10,13 @@ import UIKit
 class ViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var people = [Person]()
 
+    let imageView: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named: "marble.jpg")
+        iv.contentMode = .scaleAspectFill
+        return iv
+    }()
+
     // MARK: Lifecycle
 
     override func viewDidLoad() {
@@ -29,33 +36,23 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 
     // MARK: Internal
 
-    let imageView: UIImageView = {
-        let iv = UIImageView()
-        iv.image = UIImage(named: "marble.jpg")
-        iv.contentMode = .scaleAspectFill
-        return iv
-    }()
-
     // Return number of items
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         people.count
     }
 
-    // Return Person Cell or crash
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Person", for: indexPath) as? PersonCell else {
             fatalError("Unable to dequeue Person Cell")
         }
-        // Pull out the person from the people array at the correct position
+
         let person = people[indexPath.item]
         // Assign person name to the text of the label.
         cell.name.text = person.name
 
-        // Create a UIImage from the person's image filename, adding it to the value from getDocDir() so that we have path for the image.
         let path = getDocumentsDirectory().appendingPathComponent(person.image)
         cell.imageView.image = UIImage(contentsOfFile: path.path)
 
-        // Add border and rounded corners.
         cell.imageView.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor
         cell.imageView.layer.borderWidth = 2
         cell.imageView.layer.cornerRadius = 60
